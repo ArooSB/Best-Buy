@@ -76,7 +76,7 @@ if __name__ == "__main__":
     print(f"Total price for 100 MacBook Air M2: {mac.buy(100)}")
 
     # Checking if the MacBook Air M2 is active
-    print(mac.is_active())
+    print(f" Is MacBook Air M2 active? {mac.is_active()}")
 
     # Show the product details
     print(bose.show())

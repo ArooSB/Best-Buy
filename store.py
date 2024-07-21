@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from products import Product  # Ensure correct import
+from products import Product
 
 
 class Store:
@@ -19,7 +19,7 @@ class Store:
         return [product for product in self.products if product.is_active()]
 
     def order(self, shopping_list: List[Tuple[Product, int]]) -> float:
-        total_price = 0.0  # Ensure the initial total price is a float
+        total_price = 0.0  # Ensure total price is a float
         for product, quantity in shopping_list:
             try:
                 total_price += product.buy(quantity)
@@ -28,7 +28,7 @@ class Store:
         return total_price
 
 
-# Testing the Store class
+# Testing
 if __name__ == "__main__":
     product_list = [
         Product("MacBook Air M2", price=1450, quantity=100),
