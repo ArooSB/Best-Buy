@@ -15,7 +15,8 @@ class Product:
         self.quantity = quantity
         self.active = True
 
-    def get_quantity(self) -> float:
+    # using getter to return thr current quantity of the prodduct and setter to set a new quantity
+    def get_quantity(self) -> int:
         # Returns quantity of the product
         return self.quantity
 
@@ -23,7 +24,6 @@ class Product:
         # Check the new number for the quantity
         if quantity < 0:
             raise ValueError("Quantity can't be negative.")
-
         # Set the new quantity and deactivate the product if quantity is 0
         self.quantity = quantity
         if self.quantity == 0:
